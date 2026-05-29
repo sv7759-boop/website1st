@@ -1,0 +1,203 @@
+<!-- pagination -->
+
+<style>
+    .back{
+        
+        padding-top: 5px;
+        padding-bottom: 5px;
+        cursor: pointer;
+        
+    }
+
+    .one{
+        margin-left: 10px;
+    }
+
+    .two{
+        margin-left: 10px;
+    }
+
+    .three{
+        margin-left: 10px;
+    }
+
+    .four{
+        margin-left: 10px;
+    }
+
+    .five{
+        margin-left: 10px;
+    }
+
+    .next{
+        padding-top:5px;
+        padding-bottom: 5px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+</style>
+
+
+
+
+
+<button class="back">Back</button>
+ <a href="" target="_blank" class="one">1</a>
+ <a href="" target="_blank" class="two">2</a>
+ <a href="" target="_blank" class="three">3</a>
+ <a href="" target="_blank" class="four">4</a>
+ <a href="" target="_blank" class="five">5</a>
+ <button class="next">Next</button>
+
+ <!-- Strech -->
+
+<br><br> <button class="stretch">Stretch</button>
+<style>
+    .stretch{
+        cursor: pointer;
+        padding-right:7px;
+        padding-left: 7px;
+        padding-top: 5px;   
+        padding-bottom: 5px;
+        background-color: rgb(0, 118, 0);
+        border:none;
+        color:white;
+        transition: padding 1.15s;
+        /* margin-left: 20px; */
+    }
+
+    .stretch:hover{
+        /* transform: scale(2.0); */
+       padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 10px;   
+        padding-bottom: 10px;
+       
+    }
+
+</style>
+
+<!-- shadow -->
+
+<br><br>
+<button class="shadow">Shadow</button>
+<style>
+    .shadow{
+        cursor: pointer;
+        padding-right: 10px;
+        padding-left: 10px; 
+        padding-top: 5px;   
+        padding-bottom: 5px;
+        background-color: rgb(0, 118, 0);
+        border:none;
+        color:white;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+    
+    }
+
+    .shadow:active{
+        box-shadow:none;
+        margin-top: 3px;
+        margin-left: 3px;
+    }
+
+</style>
+
+<!-- Margin and padding together -->
+
+<!-- <br><br>
+<button class="one1">One</button>
+<button class="two2">Two</button>
+<button class="three3">Three</button>
+
+<style>
+    .one1{
+        /* margin-left: 10px; */
+       margin: 10px;
+       background-color: rgb(0, 118, 0);
+       color: white;
+         cursor: pointer;
+         border: none;
+          padding-top: 4px;
+        padding-bottom:4px;
+        padding-right: 10px;
+        padding-left: 10px;
+        transition: padding 0.15s;
+        transition: margin 0.15s;
+        transition: transform 0.15s;
+    }
+    .two2{
+        margin: 10px;
+        background-color: rgb(0, 118, 0);
+        color: white;
+        cursor: pointer;
+        border: none;
+        padding-top: 4px;
+        padding-bottom:4px;
+        padding-right: 10px;
+        padding-left: 10px;
+        transition: padding 0.15s;
+        transition: margin 0.15s;
+        transition: transform 0.15s;
+    }
+    .three3{
+        margin: 10px;
+        background-color: rgb(0, 118, 0);
+        color: white;
+        cursor: pointer;
+        border: none;
+        padding-top: 4px;
+        padding-bottom:4px;
+        padding-right: 10px;
+        padding-left: 10px;
+        transition: padding 0.15s;
+        transition: transform 0.15s;
+
+        cursor: pointer;
+        border: none;
+        padding-top: 4px;
+        padding-bottom:4px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .one1:hover, .two2:hover, .three3:hover{
+        padding-right: 15px;
+        padding-left: 15px;
+        /* margin :auto;
+        margin : none; */
+       transform: scaleX(1.2);
+       
+    }
+</style> -->
+<br><br>
+<button class="btn">One</button>
+<button class="btn">Two</button>
+<button class="btn">Three</button>
+
+<style>
+.btn{
+    position: relative;
+    margin: 10px;
+    padding: 6px 12px;
+    border: none;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgb(0, 118, 0);
+    border-radius: 2px;
+    z-index: -1;
+    transition: transform 0.15s;
+}
+
+.btn:hover::before{
+    transform: scaleX(1.2);
+}
+</style>
